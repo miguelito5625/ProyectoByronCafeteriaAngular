@@ -7,7 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatIconModule} from '@angular/material/icon';
-import { CircleMenuComponent } from './components/circle-menu/circle-menu.component';
+import { CircleMenu1Component } from './components/circle-menu1/circle-menu1.component';
+import { BookmenuComponent } from './components/bookmenu/bookmenu.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 
@@ -15,14 +19,17 @@ import { CircleMenuComponent } from './components/circle-menu/circle-menu.compon
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CircleMenuComponent
+    CircleMenu1Component,
+    BookmenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

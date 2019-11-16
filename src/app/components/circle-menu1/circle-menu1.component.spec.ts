@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CircleMenuComponent } from './circle-menu.component';
+import { CircleMenu1Component } from './circle-menu1.component';
 
-describe('CircleMenuComponent', () => {
-  let component: CircleMenuComponent;
-  let fixture: ComponentFixture<CircleMenuComponent>;
+describe('CircleMenu1Component', () => {
+  let component: CircleMenu1Component;
+  let fixture: ComponentFixture<CircleMenu1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CircleMenuComponent ]
+      declarations: [ CircleMenu1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CircleMenuComponent);
+    fixture = TestBed.createComponent(CircleMenu1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

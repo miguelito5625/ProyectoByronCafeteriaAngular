@@ -1,0 +1,73 @@
+.flipbook {
+   margin: auto auto;
+   margin-top: 20px;
+   width: 90%;
+   height: 90%;
+}
+
+.page {
+   background-color: rgba(214, 141, 46, 0.945);
+}
+
+.hard {
+   height: 100%;
+   background-image: url('http://www.therigtnt.com/images/menu-April2019/Italian_Desserts.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+div.flip-control {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   position:relative;
+   padding-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+   div.flip-control {
+      width: 97%;
+   }
+}
+
+.next-button{
+   position: absolute;
+   right: 0px;
+}
+
+.previous-button{
+   position: absolute;
+   left: 0px;
+}
+
+
+div.relative {
+   position: relative;
+   width: 45%;
+   height: 95%;
+   /* border: 3px solid #73AD21; */
+   margin-left: auto;
+   margin-right: auto;
+   /* margin-top: 20px; */
+ } 
+ 
+ @media (max-width: 720px) {
+   div.relative {
+      position: relative;
+      width: 100%;
+      height: 90%;
+      /* border: 3px solid #73AD21; */
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      /* margin-bottom: auto; */
+    } 
+    div.flip-control {
+      width: 89%;
+      margin-left: auto;
+      margin-right: auto;
+      position:relative;
+      padding-bottom: 25px;
+   }
+ }

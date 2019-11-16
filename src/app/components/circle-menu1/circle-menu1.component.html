@@ -1,0 +1,32 @@
+
+<!-- <h2>Menu</h2> -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Restaurante</span>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<nav class="menu">
+
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+    
+    <!-- <a id="uno" href="#" class="menu-item"> <i class="fa fa-bar-chart"></i> </a> -->
+    <a id="uno" [routerLink]="[ '/bookmenu']" class="menu-item">  </a>
+    <!-- <a id="dos" [routerLink]="[ '/bookmenu']" class="menu-item"> <i class="fa fa-plus"></i> </a> -->
+    <a id="dos" [routerLink]="[ '/bookmenu']" class="menu-item">  </a>
+    <!-- <a [routerLink]="[ '/bookmenu']" class="menu-item"> <i class="fa fa-heart"></i> </a> -->
+    <a id="tres" [routerLink]="[ '/bookmenu']" class="menu-item">  </a>
+    <!-- <a [routerLink]="[ '/bookmenu']" class="menu-item"> <i class="fa fa-envelope"></i> </a> -->
+    <a id="cuatro" [routerLink]="[ '/bookmenu']" class="menu-item">  </a>
+    <!-- <a [routerLink]="[ '/bookmenu']" class="menu-item"> <i class="fa fa-cog"></i> </a> -->
+    <a id="cinco" [routerLink]="[ '/bookmenu']" class="menu-item"> </a>
+    <!-- <a href="/bookmenu" class="menu-item"> <i class="fa fa-ellipsis-h"></i> </a> -->
+    
+  </nav>

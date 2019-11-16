@@ -1,4 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+/* body {
+    background-image: url('https://4.imimg.com/data4/TS/MK/MY-310713/gf_002-500x500.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: center;
+} */
+
+    body{
+        height: 100%;
+    }
+  
+    html {
+        background-image: url("https://images2.alphacoders.com/862/862730.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      
+  @media (max-width: 720px) {
+    
+    body{
+        height: 100%;
+    }
+    
+     html {
+        background-image: url("https://i.pinimg.com/originals/48/90/2c/48902ca27a2e2c9f49aeed673b763825.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  } 

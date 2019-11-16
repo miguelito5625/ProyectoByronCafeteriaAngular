@@ -1,0 +1,285 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+.mat-toolbar.mat-primary {
+  background: #f18e1c;
+  color: #fff;
+}
+
+body {
+  background: #8bc34a;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 215px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.menu {
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.menu-item, .menu-open-button {
+  background: #f18e1c;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 50px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open-button {
+  background: #f18e1c;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  margin-left: -40px;
+  position: absolute;
+  top: 50px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {
+  -webkit-transform: translate3d(0, -8px, 0);
+  transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+  transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked+.menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked+.menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menu-open:checked+.menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  margin-left: -190px;
+  padding-top: 20px;
+  padding-left: 190px;
+  width: 380px;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+}
+
+#uno {
+  background: white url('https://soyhostelero.files.wordpress.com/2018/05/lemon-3399643_1280.jpg?w=826');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border: 3px solid #f18e1c;
+}
+
+#dos {
+  background: white url('http://www.eventosavi.com/images/desayunos-granja-inglesa.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border: 3px solid #f18e1c;
+}
+
+#tres {
+  background: white url('https://thumbs.dreamstime.com/b/almuerzo-africano-8665006.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border: 3px solid #f18e1c;
+}
+
+#cuatro {
+  background: white url('https://www.clara.es/medio/2018/09/04/brochetas-pavo-verduras-parrilla_1d66f4ba_1000x1501.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border: 3px solid #f18e1c;
+}
+
+#cinco {
+  background: white url('https://pinchofyum.com/wp-content/uploads/Chicken-Tinga-Tacos-1-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border: 3px solid #f18e1c;
+}
+
+/* .menu-item:hover {
+    background: white;
+    color: #e91e63;
+  } */
+
+.menu-item:nth-child(3) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(7) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(8) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(9) {
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked+.menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked~.menu-item {
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  width: 95px;
+  height: 95px;
+}
+
+
+.menu-open:checked~.menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -114.99997px, 0);
+  transform: translate3d(0.08361px, -114.99997px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transform: translate3d(100.9466px, -23.47586px, 0);
+  transform: translate3d(100.9466px, -23.47586px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  -webkit-transform: translate3d(58.9466px, 85.47586px, 0);
+  transform: translate3d(58.9466px, 85.47586px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(6) {
+  transition-duration: 480ms;
+  -webkit-transform: translate3d(-68.08361px, 85.99997px, 0);
+  transform: translate3d(-68.08361px, 85.99997px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(7) {
+  transition-duration: 580ms;
+  -webkit-transform: translate3d(-110.86291px, -32.62064px, 0);
+  transform: translate3d(-110.86291px, -32.62064px, 0);
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+.menu-open:checked~.menu-item:nth-child(8) {
+  transition-duration: 680ms;
+  -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+  transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(9) {
+  transition-duration: 780ms;
+  -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+  transform: translate3d(-0.25084px, -104.9997px, 0);
+}
