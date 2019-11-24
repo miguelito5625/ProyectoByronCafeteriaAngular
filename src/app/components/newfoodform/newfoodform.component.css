@@ -1,0 +1,21 @@
+/* @import url("https://unpkg.com/file-upload-with-preview@4.0.2/dist/file-upload-with-preview.min.css"); */
+
+/* @import url("../../../../node_modules/file-upload-with-preview/dist/file-upload-with-preview.min.css"); */
+/* es el mismo archivo */
+
+.card-form-platillo {
+    max-width: 600px;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    margin-top: 20px;
+  }
+  
+  .contenedor-card-platillo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenedor-card-platillo > * {
+    width: 100%;
+  }

@@ -1,21 +1,48 @@
 <!-- <p>bookmenu works!</p> -->
 
 <div class="relative">
-	
+
 	<div class="flip-control">
 		<button mat-raised-button color="primary" (click)="paginarAnterior()" class="previous-button">Anterior</button>
 		<button mat-raised-button color="primary" (click)="siguientePagina()" class="next-button">Siguiente</button>
 	</div>
-	
+
 	<div id="flipbook" class="flipbook">
 		<!-- <div class="hard"> Turn.js </div>
 		<div class="hard"></div> -->
-		<div> Page 1 </div>
-		<div> Page 2 </div>
+		
+		<div #paginaDiv *ngFor="let platillo of ListaPlatillos;">
+
+			<mat-card class="card-platillo">
+				<mat-card-header>
+					<!-- <div mat-card-avatar class="example-header-image"></div> -->
+					<mat-card-title>{{ platillo.nombre }}</mat-card-title>
+					<mat-card-subtitle>Q{{ platillo.precio }}</mat-card-subtitle>
+				</mat-card-header>
+				<img mat-card-image
+					src="{{ platillo.imagen }}"
+					alt="imagen">
+				<mat-card-content>
+					<p>
+						{{ platillo.descripcion }}
+					</p>
+				</mat-card-content>
+				<mat-card-actions>
+					<!-- <button mat-button>LIKE</button>
+						  <button mat-button>SHARE</button> -->
+				</mat-card-actions>
+			</mat-card>
+
+		</div>
+
+		
+
+
+		<!-- <div> Page 2 </div>
 		<div> Page 3 </div>
-		<div> Page 4 </div>
+		<div> Page 4 </div> -->
 		<!-- <div class="hard"></div>
 		<div class="hard"></div> -->
 	</div>
-	
+
 </div>

@@ -5,9 +5,11 @@
    height: 90%;
 }
 
-.page {
-   background-color: rgba(214, 141, 46, 0.945);
-}
+
+/* .page {
+   background-color: red;
+} */
+
 
 .hard {
    height: 100%;
@@ -21,7 +23,7 @@ div.flip-control {
    width: 90%;
    margin-left: auto;
    margin-right: auto;
-   position:relative;
+   position: relative;
    padding-bottom: 25px;
 }
 
@@ -31,28 +33,28 @@ div.flip-control {
    }
 }
 
-.next-button{
+.next-button {
    position: absolute;
    right: 0px;
 }
 
-.previous-button{
+.previous-button {
    position: absolute;
    left: 0px;
 }
 
-
 div.relative {
    position: relative;
-   width: 45%;
+   width: 35%;
    height: 95%;
    /* border: 3px solid #73AD21; */
    margin-left: auto;
    margin-right: auto;
+   margin-top: 30px;
    /* margin-top: 20px; */
- } 
- 
- @media (max-width: 720px) {
+}
+
+@media (max-width: 720px) {
    div.relative {
       position: relative;
       width: 100%;
@@ -62,12 +64,34 @@ div.relative {
       margin-right: auto;
       margin-top: 30px;
       /* margin-bottom: auto; */
-    } 
-    div.flip-control {
+   }
+   div.flip-control {
       width: 89%;
       margin-left: auto;
       margin-right: auto;
-      position:relative;
+      position: relative;
       padding-bottom: 25px;
    }
+}
+
+/* Css del componente card */
+
+.card-platillo {
+   /* max-width: 400px; */
+   height: 90%;
+   width: 100;
+}
+
+/* .example-header-image {
+   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+   background-size: cover;
+} */
+
+.mat-card-image {
+   height: 50%;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
  }

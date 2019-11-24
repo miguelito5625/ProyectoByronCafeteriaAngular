@@ -10,27 +10,31 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
     background-position: center;
 } */
 
-    body{
-        height: 100%;
-    }
+    
   
-    html {
-        background-image: url("https://images2.alphacoders.com/862/862730.jpg");
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-  
+      @media (min-width: 720px) {
+        body{
+            height: 100%;
+        }
       
-  @media (max-width: 720px) {
+        html {
+            background-image: url("assets/images/backgraund-desktop.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+      }
+
+      
+  @media (max-width: 719px) {
     
     body{
         height: 100%;
     }
     
      html {
-        background-image: url("https://i.pinimg.com/originals/48/90/2c/48902ca27a2e2c9f49aeed673b763825.jpg");
+        background-image: url("assets/images/backgraund-mobile.jpg");
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;

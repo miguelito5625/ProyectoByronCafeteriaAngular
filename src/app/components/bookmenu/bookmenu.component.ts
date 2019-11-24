@@ -1,4 +1,5 @@
-import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener, ViewChildren, QueryList } from '@angular/core';
+import { PlatilloService } from 'src/app/servicios/platillo.service';
 // import * as $ from 'jquery';
 declare var $: any;
 
@@ -9,15 +10,33 @@ declare var $: any;
 })
 export class BookmenuComponent implements OnInit, AfterViewInit {
 
+  @ViewChildren('paginaDiv') things: QueryList<any>;
+
+  ListaPlatillos: any = [];
+
+  // obtener tamanio del body en tiempo real
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     console.log(event.target.innerWidth);
 
   }
 
-  constructor() { }
+  constructor(
+    public platilloService: PlatilloService
+  ) { }
 
-  ngOnInit() {
+  cargarPlatillos(){
+    return this.platilloService.ObtenerPlatillos().subscribe((data: {}) => {
+      // this.datosListos = true;
+      this.ListaPlatillos = data;
+      // console.log(data);
+      // this.estadoBotonEliminar = false;
+      // console.log(moment(this.ListaUsuarios[0].fecha_nacimiento).format('DD MMMM YYYY'));
+
+    });
+  }
+
+  cargarTurnJs(){
     $("#flipbook").turn({
       // width: $(document).width() * .95,
       // height: $(document).height() * .75,
@@ -42,12 +61,18 @@ export class BookmenuComponent implements OnInit, AfterViewInit {
         }
       }
     });
+  }
+
+  ngOnInit() {
+    this.cargarPlatillos();
+    
 
   }
 
   ngAfterViewInit() {
-
-
+    this.things.changes.subscribe(t => {
+      this.cargarTurnJs();
+    })
   }
 
   siguientePagina() {

@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BookmenuComponent } from './components/bookmenu/bookmenu.component';
 import { CircleMenu1Component } from './components/circle-menu1/circle-menu1.component';
+import { NewfoodformComponent } from './components/newfoodform/newfoodform.component';
 
 
 const routes: Routes = [
-  { path: 'bookmenu', component: BookmenuComponent },
-  { path: '', component: CircleMenu1Component },
+  { path: '', component: BookmenuComponent },
+  { path: 'agregarplatillo', component: NewfoodformComponent },
+  // { path: '', component: CircleMenu1Component },
 ];
 
 @NgModule({
